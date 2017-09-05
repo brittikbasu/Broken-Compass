@@ -1,14 +1,16 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content>
+
+
+  <img src="assets/img/compass.jpg" [class.rotateIn]="this.pp" style="margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  display: block;" *ngIf = "pp"/>
+
+  <img src="assets/img/compass.jpg" [class.rotateIn]="this.lp" style="margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  display: block;" *ngIf = "lp"/>
+
 </ion-content>

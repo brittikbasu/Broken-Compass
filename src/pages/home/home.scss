@@ -1,3 +1,30 @@
 page-home {
+    .animated {
+        
+        
+      }
+
+    @keyframes rotateIn {
+        from {
+          transform-origin: center;
+          transform: rotate3d(0, 0, 1, -200deg);
+          opacity: 0;
+        }
+      
+        to {
+          transform-origin: center;
+          transform: none;
+          opacity: 1;
+        }
+      }
+      
+      .rotateIn {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-delay: 0.1s;
+        animation-name: rotateIn;
+      }
+      
+      
 
 }
