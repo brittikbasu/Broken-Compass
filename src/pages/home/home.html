@@ -1,16 +1,17 @@
+<!--<ion-header>
 
+  <ion-navbar>
+    <ion-title>Broken Compass</ion-title>
+  </ion-navbar>
 
-<ion-content>
-
-
-  <img src="assets/img/compass.jpg" [class.rotateIn]="this.pp" style="margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  display: block;" *ngIf = "pp"/>
-
-  <img src="assets/img/compass.jpg" [class.rotateIn]="this.lp" style="margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  display: block;" *ngIf = "lp"/>
-
+</ion-header>
+-->
+<ion-content padding>
+  <img src="assets/img/compass.jpg" class="center" />
+  <h2 class="center">Broken Compass</h2>
+  <h4 class="center">A clock that has stopped working shows the right time twice a day. Broken compass was built taking inspiration from such
+    a clock. It points towards the right direction only when you're pointing it towards the right direction.
+  </h4>
+  <div class="breaker"></div>
+  <button ion-button color="dark" outline block [navPush]="compassPage">Play!</button>
 </ion-content>

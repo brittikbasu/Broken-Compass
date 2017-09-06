@@ -1,0 +1,47 @@
+page-compass {
+  h4 {
+    font-family: 'Bad Script', serif;
+  }
+  @keyframes rotateIn {
+    from {
+      transform-origin: center;
+      transform: rotate3d(0, 0, 1, -200deg);
+      opacity: 0;
+    }
+    to {
+      transform-origin: center;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  .rotateIn {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.1s;
+    animation-name: rotateIn;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13vh;
+  }
+  .center2 {
+    @extend .center;
+    margin-top: -3.5vh;
+  }
+  .compass-size {
+    min-height: 320px;
+    min-width: 320px;
+  }
+  .orientation {
+    margin-top: 2vh;
+    height: 20px;
+    font-size: 1em;
+    vertical-align: center;
+    text-align: center;
+  }
+  .toolbar-title {
+    font-family: 'Bad Script', serif;
+  }
+}

@@ -8,11 +8,13 @@ import { DeviceOrientation } from '@ionic-native/device-orientation';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { CompassPage } from '../pages/compass/compass';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    CompassPage
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,8 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    CompassPage
   ],
   providers: [
     StatusBar,
